@@ -1,39 +1,41 @@
 let startButton = document.querySelector("#start");
 let timerEl = document.querySelector("#time");
+let startQuizEl = document.querySelector("#questions");
+let endScreen = document.querySelector("#end-screen");
 
+
+// A start button that when clicked a timer starts and the first question appears.
 startButton.addEventListener("click", function(){
+
+    timer();
+    startQuiz();
+    renderQuestion();
 
 })
 
+let lastQuestion; 
+let initialTime = 300;
 function timer() {
-    let timeLeft = 300;
-  
-    var timeInterval = setInterval(function () {
-        timeLeft--;
-        timerEl.textContent = timeLeft;
+
+    let timeInterval = setInterval(function () {
+      initialTime--;
+      timerEl.textContent = initialTime;
       
-      if(timeLeft === 0) {
+      if(initialTime === 0 || lastQuestion) {
         clearInterval(timeInterval);
-        //create a function to open the score page and 
+        gameOver()
+
+        //create a function to open the score page
         displayScore();
       }
     }, 1000);
+  };
+
+  function startQuiz(){
+    startQuizEl.setAttribute("class", "show");
   }
 
-  timer();
-  
-
-// A start button that when clicked a timer starts and the first question appears.
-
-// Questions contain buttons for each answer.
-
-// When answer is clicked, the next question appears
-
-// If the answer clicked was incorrect then subtract time from the clock
-
-// The quiz should end when all questions are answered or the timer reaches 0.
-
-// When the game ends, it should display their score and give the user the ability 
-// to save their initials and their score
-
-
+  function gameOver(){
+    endScreen.setAttribute("class", "show");
+    endScreen.children[1].span.textContent = finalScore;
+  }
