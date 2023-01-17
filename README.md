@@ -4,6 +4,8 @@
 
 Quiz created to practice important DOM skills. Rendering results on the page, setInterval, create and delete elements dynamically on the page. As the use of localStorage. 
 
+Deployed application: https://anawada.github.io/JavaScript-Quiz/
+
 ## Usage 
 
 Press the button "Start Quiz" and test your basic knowledge in JavaScript.
