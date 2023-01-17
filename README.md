@@ -9,7 +9,8 @@ Quiz created to practice important DOM skills. Rendering results on the page, se
 Press the button "Start Quiz" and test your basic knowledge in JavaScript.
 
 
-![alt text](assets/images/screenshot.png)
+<img width="629" alt="screenshot" src="https://user-images.githubusercontent.com/108739635/213019460-a9841220-1592-40d2-b8eb-0eceb3be2382.png">
+
 
 
 ## License
