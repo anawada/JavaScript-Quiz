@@ -9,7 +9,7 @@ Quiz created to practice important DOM skills. Rendering results on the page, se
 Press the button "Start Quiz" and test your basic knowledge in JavaScript.
 
 
-![alt text](assets/images/screenshot.png)
+![alt text](assets/images/Screenshot%20.png
 
 
 ## License
